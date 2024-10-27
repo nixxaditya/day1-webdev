@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 1 | Followers Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <!----Font awesome cdn  font icon css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="hero-header">
+      <div class="wrapper">
+        <header>
+          <div class="logo">
+            <i class="fa-solid fa-@">@</i>
+            <div class="logo-text">sibu____bb____sibu</div>
+          </div>
+          <nav>
+            <div class="togglebtn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <ul class="navlinks">
+              <li><a href="#">Home</a></li>
+              <li>
+                <a href="https://www.instagram.com/sibu______bb_____sibu/"
+                  >profile</a
+                >
+              </li>
+              <li>
+                <a href="https://www.instagram.com/direct/t/17850998567648652"
+                  >Message</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <div class="container">
+          <div class="hero-pic">
+            <img src="images/pfp.jpg" alt="profile pic" />
+          </div>
+          <div class="hero-text">
+            <h5>Hi I'm <span class="input"></span></h5>
+            <h1>Siubhm</h1>
+            <br />
+            <h3 style="color: white">BIO</h3>
+            <p style="color: rgba(255, 255, 255, 0.817)">
+              I miss you 💞💞🥹🥹☔☔☔😭😭😞😴 I love you 💞💗 royal bhai
+            </p>
+
+            <div class="btn-group">
+              <a
+                href="https://www.instagram.com/sibu______bb_____sibu/reels/"
+                class="btn active"
+                >Content</a
+              >
+            </div>
+
+            <div class="social">
+              <a href="https://www.instagram.com/sibu______bb_____sibu/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.facebook.com/people/Siubhm-December/pfbid0GtxvqEU7TemMTemhdoJL6XQ4rUEpd32urLcV9XfeSGdRonzvkDHXFzZkJwPNqxt5l/?ref=xav_ig_profile_web"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+            <br />
+            <footer>Devloper - @webdev.challenge</footer>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---typed js for typing text effect-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script>
+      /** creating button click show hide navbar **/
+      var togglebtn = document.querySelector(".togglebtn");
+      var nav = document.querySelector(".navlinks");
+      var links = document.querySelector(".navlinks li");
+
+      togglebtn.addEventListener("click", function () {
+        this.classList.toggle("click");
+        nav.classList.toggle("open");
+      });
+
+      var typed = new Typed(".input", {
+        strings: ["Content Creator"],
+        typedSpeed: 70,
+        backSpeed: 55,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>
